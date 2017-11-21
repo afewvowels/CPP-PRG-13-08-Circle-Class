@@ -28,8 +28,49 @@
 //  circumference.
 
 #include <iostream>
+#include <iomanip>
+#include "Circle.hpp"
+
+Circle createCircle();
+void displayResults(Circle);
 
 int main()
 {
+    Circle cirCircle;
+    
+    cirCircle = createCircle();
+    
+    displayResults(cirCircle);
+    
     return 0;
+}
+
+Circle createCircle()
+{
+    Circle cirCircle;
+    
+    double dblRadius;
+    
+    std::cout << "Please enter a radius: ";
+    std::cin >> dblRadius;
+    while (!std::cin || dblRadius <= 0.0 || dblRadius >= 100.0)
+    {
+        std::cout << "Please enter a number between 0 and 100: ";
+        std::cin.clear();
+        std::cin.ignore();
+        std::cin >> dblRadius;
+    }
+    
+    cirCircle.setRadius(dblRadius);
+    
+    return cirCircle;
+}
+
+void displayResults (Circle circle)
+{
+    std::cout << std::fixed << std::showpoint << std::setprecision(2);
+    
+    std::cout << "Area: " << circle.getArea() << std::endl;
+    std::cout << "Diameter: " << circle.getDiameter() << std::endl;
+    std::cout << "Circumference: " << circle.getCircumference() << std::endl;
 }

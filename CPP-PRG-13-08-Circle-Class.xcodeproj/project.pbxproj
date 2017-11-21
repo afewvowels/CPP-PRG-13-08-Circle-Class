@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		253BDC8A1FC4A7A0003AE370 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 253BDC891FC4A7A0003AE370 /* main.cpp */; };
+		253BDC921FC4A8E2003AE370 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 253BDC901FC4A8E2003AE370 /* Circle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		253BDC861FC4A7A0003AE370 /* CPP-PRG-13-08-Circle-Class */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CPP-PRG-13-08-Circle-Class"; sourceTree = BUILT_PRODUCTS_DIR; };
 		253BDC891FC4A7A0003AE370 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		253BDC901FC4A8E2003AE370 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		253BDC911FC4A8E2003AE370 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				253BDC891FC4A7A0003AE370 /* main.cpp */,
+				253BDC901FC4A8E2003AE370 /* Circle.cpp */,
+				253BDC911FC4A8E2003AE370 /* Circle.hpp */,
 			);
 			path = "CPP-PRG-13-08-Circle-Class";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				253BDC8A1FC4A7A0003AE370 /* main.cpp in Sources */,
+				253BDC921FC4A8E2003AE370 /* Circle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
